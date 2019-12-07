@@ -13,7 +13,7 @@ RUN npm install
 # RUN npm ci --only=production
 
 # Bundle app source
-COPY . .
+COPY . /path/to/dir/in/image
 
 EXPOSE 3000
 CMD [ "npm", "start" ]
