@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: 'b6174993-4c00-47ae-9d77-13a002106e53'
   imageRepository: 'katjafoxsoftwaredeploymentlab'
   containerRegistry: 'nodejsnewcontainerregistry.azurecr.io'
-  dockerfilePath: 'Dockerfile'
+  dockerfilePath: 'dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'nodejsnewcontainerregistryf176-auth'
 
