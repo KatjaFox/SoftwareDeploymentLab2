@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: katjafoxsoftwaredeploymentlab 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: katjafoxsoftwaredeploymentlab 
+    spec:
+      containers:
+        - name: katjafoxsoftwaredeploymentlab 
+          image: nodejsnewcontainerregistry.azurecr.io/katjafoxsoftwaredeploymentlab
+          ports:
+          - containerPort: 3000
